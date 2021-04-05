@@ -11,7 +11,7 @@
     Fore more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-  <!--<base href="/">-->
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -29,14 +29,14 @@
   <title>apes_website</title>
   <link rel="manifest" href="manifest.json">
 </head>
-<body>
+<body id="app-container">
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3987446313');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=4273128785');
       });
     }
   </script>
